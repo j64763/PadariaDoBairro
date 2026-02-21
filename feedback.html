@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#128140; Feedback</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">🍞 Página Inicial</a>
+            <a href="./cadastro.html">&#128221; Cadastro</a>
+            <a href="./pedidos.html">&#128220; Pedidos</a>
+            <a href="./contato.html"> &#128231;  Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Feedback &#128140;</h1>
+        <fieldset>
+            <legend>Feedback: </legend>
+            <form>
+                <div class="container">
+                <label for="nome">👤 Nome completo (opcional):</label>
+                <input type="text" id="nome" placeholder="Digite seu nome completo">
+
+                <br><br>
+                
+                <label for="email"> 📧 Email (opcional):</label>
+                <input type="email" id="email" placeholder="Digite seu email">
+
+                <br><br>
+
+                <label for="produto">🍞 Produto/Serviço* </label>
+
+                <select id="produto" required>
+                    <option value="">Selecione um produto*</option>
+                    <option value="">🥖 Pães tradicionais</option>
+                    <option value="">🍰 Doces e bolos</option>
+                    <option value="">🥐 Salgados</option>
+                    <option value="">👥 Atendimento</option>
+                    <option value="">🏠 Ambiente</option>
+                    <option value="">💲 Preços</option>
+                </select>
+
+                <br>
+
+                
+                <!-- foi solicitado required no radio -->
+                <p><strong>Avaliação Geral*</strong></p>
+
+
+                <input type="radio" name="avaliacao" id="excelente">
+                <label for="excelente">🌟 Excelente</label>
+
+                <input type="radio" name="avaliacao" id="bom">
+                <label for="bom">👍 Bom</label>
+
+                <input type="radio" name="avaliacao" id="regular">
+                <label for="regular">😐 Regular</label>
+
+                <input type="radio" name="avaliacao" id="ruim">
+                <label for="ruim">👎 Ruim</label>
+
+                <br><br>
+
+                <label for="comentarios">✍️ Comentários </label>
+                <textarea id="comentarios" placeholder="Insira seu comentário aqui"></textarea>
+
+                <br><br>
+
+                <input type="checkbox" id="recomendacao">
+                <label for="recomendacao">👍 Recomendaria para amigos? </label>
+
+                <br>
+                
+                <input type="checkbox" id="autorizacao">
+                <label for="autorizacao">📰 Autoriza publicação do depoimento? </label>
+
+                <br><br>
+
+                <input type="submit" value=" &#128229; Enviar" class="botoes">
+                </div>
+            </form>
+        </fieldset>
+    </main>
+    
+</body>
+</html> 

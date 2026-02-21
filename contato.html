@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> &#128231; Contato</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>    
+        <nav>
+            <a href="./index.html" >🍞 Página Inicial</a>
+            <a href="./cadastro.html" >&#128221; Cadastro</a>
+            <a href="./pedidos.html" >&#128220; Pedidos</a>
+            <a href="./feedback.html" >&#128140; Feedback</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Contato &#128231; </h1>
+
+        <fieldset>
+            <legend>Preencha o formulário:</legend>
+            <form>
+
+                <div class="container">
+                
+                <label for="nome" class="label-textos"> 👤 Nome completo:*</label>
+                <input type="text" id="nome" placeholder="Digite seu nome completo" required class="input-textual">
+                
+                <br><br>
+                
+                <label for="email" class="label-textos"> 📧  Email:*</label>
+                <input type="email" id="email" required placeholder="Digite seu e-mail" class="input-textual">
+                
+                <br><br>
+
+                <label for="assunto" class="label-textos"> &#128196; Assunto:</label>
+                <select id="assunto">
+                    <option>ℹ️ Informações gerais</option>
+                    <option>⚠️ Reclamação</option>
+                    <option>💡 Sugestão</option>
+                    <option>🌟 Elogio</option>
+                    <option>🎂 Pedido especial</option>
+                    <option>❓ Outros</option>
+                </select>
+
+                <br><br>
+
+                <label for="telefone" class="label-textos"> &#128222; Telefone: </label>
+                <input type="tel" id="telefone" pattern="\(\d{2}\)\d{4,5}-\d{4}" placeholder="(xx)xxxx-xxxx" class="input-textual">
+
+                <br><br>
+
+                <label for="mensagem" class="label-textos"> &#128233; Mensagem:*</label>
+                <textarea id="mensagem" required minlength="10" placeholder="Digite aqui sua mensagem">
+                </textarea>
+
+
+
+            <input type="submit" value=" &#128229; Enviar" class="botoes">
+                </div>
+            </form>
+    </fieldset>
+
+    </main>
+
+</body>
+
+</html>

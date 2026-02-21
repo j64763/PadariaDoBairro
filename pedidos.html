@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> &#128220; Pedidos especiais</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html"> 🍞 Página Inicial</a>
+            <a href="./cadastro.html">&#128221; Cadastro</a>
+            <a href="./contato.html">&#128231; Contato</a>
+            <a href="./feedback.html"> &#128140; Feedback</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Pedidos especiais &#128220;</h1>
+        <p>Aqui você pode realizar pedidos especiais, especificando o tipo e a quantidade.</p>
+        <fieldset>
+            <legend>Preencha o formulário </legend>
+            <form>
+                <div class="container">
+                <label for="nome">👤 Nome completo:*</label>
+                <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+
+                <br><br>
+
+                <label for="telefone">📞 Telefone:* </label>
+                <input type="tel" id="telefone" placeholder="(xx)xxxx-xxxx" pattern="\(\d{2}\)\d{4,5}-\d{4}" required>
+
+                <!-- \( → abre parênteses (
+                        \d{2} → dois dígitos do DDD
+                        \) → fecha parênteses )
+                        \d{4,5} → número com 4 ou 5 dígitos (fixo ou celular)
+                    - → hífen
+                    \d{4} → últimos 4 dígitos -->
+
+                <br><br>
+
+                <label for="email"> 📧 Email:*</label>
+                <input type="email" id="email" placeholder="Digite seu email" required>
+
+                <br><br>
+
+                <p> 🍰 Tipo de produto:</p>
+
+                <input type="radio" id="tipo_bolo" name="tipo_produto">
+                <label for="tipo_bolo">🍰Bolos</label>
+
+                <input type="radio" id="tipo_torta" name="tipo_produto">
+                <label for="tipo_torta">🥧Tortas </label>
+
+                <input type="radio" id="tipo_pão" name="tipo_produto">
+                <label for="tipo_pão">🥖Pães </label>
+
+                <input type="radio" id="tipo_doce" name="tipo_produto">
+                <label for="tipo_doce">🍪Doces </label>
+
+                <input type="radio" id="tipo_salgados" name="tipo_produto">
+                <label for="tipo_salgados">🧆Salgados </label>
+
+                <input type="radio" id="tipo_bebidas" name="tipo_produto">
+                <label for="tipo_bebidas">☕Bebidas </label>
+
+                <br><br>
+
+                <label for="sabor"> &#127851; Escolha o sabor desejado:</label>
+                <select id="sabor">
+                    <option value=""> Escolha o sabor:</option>
+                    <option value=""> &#127851; Chocolate</option>
+                    <option value=""> &#127827; Morango</option>
+                    <option value=""> &#127856; Baunilha</option>
+                </select>
+
+                <br><br>
+
+                <label> 📏 Escolha o tamanho:</label>
+                <input type="radio" name="tamanho" id="pequeno">
+                <label for="pequeno">Pequeno</label>
+
+                <input type="radio" name="tamanho" id="medio">
+                <label for="medio">Médio</label>
+
+                <input type="radio" name="tamanho" id="grande">
+                <label for="grande">Grande</label>
+
+                <br><br>
+
+                <label for="data_de_entrega">📅 Escolha a data de entrega:* </label>
+                <input type="date" id="data_de_entrega" required>
+
+                <br><br>
+
+                <label for="observacoes">&#128233; Observações especiais: </label>
+                <textarea  id="observacoes" placeholder="Digite aqui alguma observação "></textarea>
+
+                <br><br>
+
+                <label for="orcamento">&#128176; Digite o orçamento máximo: </label>
+                <input type="number"  id="orcamento" min="1">
+
+                <br><br>
+
+                <input type="submit" value=" &#128229; Enviar" class="botoes">
+                </div>
+            </form>
+        </fieldset>
+    </main>
+
+</body>
+
+</html>
