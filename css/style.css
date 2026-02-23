@@ -39,6 +39,7 @@ header {
     background-color: var(--cor-texto);
     padding: 20px;
     position: sticky;
+    z-index: 10;
     top: 0;
     width: 100%;
     border: var(--bordas);
