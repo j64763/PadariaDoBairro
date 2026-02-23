@@ -213,7 +213,7 @@ footer th {
 .galeria {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: 30vh;
+    /* grid-template-rows: 30vh; */
 }
 
 .galeria img {
