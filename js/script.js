@@ -124,7 +124,7 @@ telefone = "1234-5678";
 
 //crie uma funcao que sauda o cliente de acordo com o horário que ele entra no site
 
-function saudacao() {
+/*function saudacao() {
 
     const horario = new Date().getHours();
     //let horario = 23;
@@ -139,3 +139,62 @@ function saudacao() {
 }
 
 saudacao();
+
+*/
+
+// 👋 Uma função que exiba uma mensagem de boas-vindas
+
+const boasVindas = () => "Seja Bem-Vindo!";
+
+console.log(boasVindas());
+
+//🛒 Uma função que calcule o subtotal de itens (receba preço e quantidade)
+
+//arrow function
+
+
+const subtotal = (preco, quantidade) => preco * quantidade;
+
+console.log(`O subtotal da sua compra é R$ ${subtotal(6.00, 5)}`);
+
+
+
+// 🎁 Uma função que calcule desconto (receba valor e percentual de desconto)
+
+function desconto(valor, percentual) {
+    let valorDesconto = (valor * percentual) / 100;
+
+    console.log(`O seu desconto é de R$ ${valorDesconto}`);
+
+}
+
+desconto(30, 15);
+
+// 🚚 Uma função que calcule a taxa de entrega baseada na distância
+
+function calcularTaxaEntrega(distancia) {
+    if (distancia < 5) {
+        console.log("A sua distancia permite frete gratuito");
+    } else if (distancia >= 15) {
+        console.log("Frete de R$ 15,00");
+    }
+}
+
+calcularTaxaEntrega(30);
+
+//lógica do campo para pesquisar produtos
+
+document.getElementById("campo-filtro").addEventListener("input", (e) => {
+    console.log("digitando", e.target.value)
+    const valor = e.target.value.toLowerCase();
+    const resultado = document.getElementById("resultado");
+    resultado.innerHTML = "";
+
+    listagemProdutos
+        .filter((produto) => produto.nome.toLowerCase().includes(valor))
+        .forEach((produto) => {
+            const li = document.createElement("li");
+            li.textContent = ` ${produto.nome} - Preço: R$ ${produto.preco} `;
+            resultado.appendChild(li);
+        });
+});

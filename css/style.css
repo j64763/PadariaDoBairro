@@ -1,14 +1,14 @@
 /* variaveis */
 :root {
-    --cor-fundo:#F5F5DC;
+    --cor-fundo: #F5F5DC;
     --cor-primaria: #8B4513;
     --cor-secundária: #D2691E;
-    --cor-texto:  #2F1B14;
+    --cor-texto: #2F1B14;
     --cor-destaque: #FF8C00;
     --bordas: solid 4px white;
     --margin-padrão: 20px;
     --sombra-padrão: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    
+
 }
 
 
@@ -26,7 +26,7 @@ body {
     margin: 10px;
     color: var(--cor-texto);
     font-family: "SN Pro", sans-serif;
-    
+
 
 
 }
@@ -44,7 +44,7 @@ header {
     width: 100%;
     border: var(--bordas);
     border-radius: 20px;
-  }
+}
 
 .logo-whatsapp {
     position: fixed;
@@ -52,14 +52,14 @@ header {
     right: 5%;
     width: 80px;
 }
-    
+
 .imagem-whatsapp {
     width: 100px;
 }
 
 nav {
     text-align: center;
-    
+
 
 }
 
@@ -69,11 +69,12 @@ a {
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    
+
 }
- a:hover {
+
+a:hover {
     color: var(--cor-destaque);
- }
+}
 
 
 h1 {
@@ -83,7 +84,7 @@ h1 {
 }
 
 .nome-pagina-principal {
-        color: var(--cor-fundo);
+    color: var(--cor-fundo);
 
 }
 
@@ -101,10 +102,47 @@ section {
     margin-top: 30px;
 }
 
+/* caixa pai contendo os cards dos produtos */
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+.produtos .pesquisar-produto {
+    grid-column: 1/4;
+}
+
+.card-produtos {
+    border: solid #D2691E;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-produtos img {
+    width: 80%;
+    height: 25vh;
+}
+
+.card-produtos h4 {
+    margin-top: 30px;
+
+}
+
+.card-produtos button {
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #2F1B14;
+    color: #F5F5DC;
+    border: #F5F5DC solid;
+}
+
 table {
     border-collapse: collapse;
     margin: 30px;
-   
+
 
 
 }
@@ -113,7 +151,8 @@ table:hover {
     box-shadow: var(--sombra-padrão);
 }
 
-th, td {
+th,
+td {
     border: var(--bordas);
     padding: 10px;
 }
@@ -122,7 +161,7 @@ th {
     background-color: var(--cor-secundária);
     color: var(--cor-fundo);
 
-    
+
 }
 
 p {
@@ -134,15 +173,19 @@ ul {
     list-style: none;
 }
 
-.imagem-padaria,  .imagem-produtos, .video {
+.imagem-padaria,
+.imagem-produtos,
+.video {
     margin: var(--margin-padrão);
     border: var(--bordas);
     border-radius: 20px;
 }
 
-.imagem-padaria:hover, .imagem-produtos:hover, .video:hover {
+.imagem-padaria:hover,
+.imagem-produtos:hover,
+.video:hover {
     box-shadow: var(--sombra-padrão);
-    
+
 }
 
 address {
@@ -151,34 +194,35 @@ address {
 
 
 
- /* iframe {  */
-     /* height: 15vw;  */
-    /* width: 100%; */
+/* iframe {  */
+/* height: 15vw;  */
+/* width: 100%; */
 /* }  */
 #sobre {
 
     display: grid;
-    grid-template-columns: repeat(2, 6fr) ;
+    grid-template-columns: repeat(1, 6fr);
     gap: 20px;
     grid-template-rows: 90vh;
 
 }
+
 .sobre-titulo-imagem {
     grid-row: 1/2;
 }
 
-.video { 
-     width: 80%; 
-     height: 40%;
-     margin: 20px;
+.video {
+    width: 80%;
+    height: 40%;
+    margin: 20px;
 
 
- } 
+}
 
 
 .nome-pagina-principal {
-     font-family: "Lobster Two", sans-serif;
-     font-size: 50px;
+    font-family: "Lobster Two", sans-serif;
+    font-size: 50px;
 }
 
 
@@ -196,6 +240,7 @@ footer {
     color: var(--cor-fundo);
     border-radius: 45px;
 }
+
 footer h2 {
     color: var(--cor-destaque);
 }
@@ -208,17 +253,18 @@ footer th {
 
 .imagem-padaria {
     width: 80%;
+    height: 60%;
     margin-left: 10%;
 }
 
 .galeria {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    
+
 }
 
 .galeria img {
-  width:80%;
+    width: 80%;
 }
 
 
@@ -227,6 +273,7 @@ footer th {
 
 
 }
+
 .flex {
     display: flex;
     justify-content: space-around;
@@ -241,8 +288,9 @@ footer th {
 /* estilização de formulários */
 form {
     margin: 20px;
-    
+
 }
+
 .botoes {
     padding: 20px;
     background-color: #2F1B14;
@@ -252,6 +300,7 @@ form {
     margin-top: 10px;
     margin-left: 50%;
 }
+
 .botoes:hover {
     background-color: var(--cor-primaria);
 }
@@ -270,15 +319,16 @@ legend {
     font-size: 20px;
 
 }
+
 label {
     margin: 10px;
 
 }
- input[type="text"], 
- input[type="tel"], 
- input[type="email"],
- input[type="number"] 
-{
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"] {
 
     width: 500px;
     height: 35px;
@@ -286,20 +336,21 @@ label {
     padding: 10px;
     background-color: white;
     margin: 10px;
-    display: block;
+    /* display: block; */
 }
- select {
+
+select {
     height: 40px;
     margin-left: 30px;
- }
+}
 
- textarea {
+textarea {
     height: 250px;
     width: 500px;
     margin-top: 10px;
     margin-left: 30px;
     display: block;
- }
+}
 
 input[type="date"] {
     margin-left: 30px;
@@ -307,6 +358,7 @@ input[type="date"] {
     border-radius: 20px;
     padding: 10px
 }
+
 input[type="checkbox"],
 input[type="radio"] {
     width: 20px;
@@ -325,38 +377,48 @@ input[type="radio"] {
 
 
 @media (max-width:768px) {
- .flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
- }
 
- .galeria {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    body {
+        margin-left: 20px;
+    }
 
-#sobre {
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-    display: grid;
-    grid-template-columns: repeat(1, 6fr) ;
-    gap: 20px;
-    grid-template-rows: 50vh;
+    .produtos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-}
+    }
 
-.sobre-titulo-imagem {
-    height: auto;
-}
+    #sobre {
 
-.videos {
-    margin-top: 80px;
-    height: 80vh;
-}
+        display: grid;
+        grid-template-columns: repeat(1, 6fr);
+        gap: 20px;
+        grid-template-rows: 50vh;
 
-table {
-    font-size: 11px;
-}
+    }
+
+    .sobre-titulo-imagem {
+        height: auto;
+    }
+
+    .videos {
+        margin-top: 80px;
+        height: 80vh;
+    }
+
+    table {
+        font-size: 11px;
+    }
+
+    input[type="text"] {
+        width: 80%;
+    }
 
 }
