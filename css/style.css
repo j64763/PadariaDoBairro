@@ -170,6 +170,10 @@ section {
     border: #F5F5DC solid;
 }
 
+.card-produtos button:hover {
+        background-color: #D2691E;
+}
+
 table {
     border-collapse: collapse;
     margin: 30px;
