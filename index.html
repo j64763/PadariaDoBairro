@@ -23,7 +23,7 @@
         <!-- logo -->
         <img src="https://static.vecteezy.com/ti/vetor-gratis/t1/19133454-modelo-de-de-design-de-logotipo-de-padaria-retro-vintage-gratis-vetor.jpg"
             alt="logo da padaria" class="logo">
-        <h1 class="nome-pagina-principal">Padaria Doce Sonho 🍞 </h1>
+        <h1 class="nome-pagina-principal" >Padaria Doce Sonho 🍞 </h1>
 
         <!-- barra de navegação -->
         <nav>
@@ -35,45 +35,34 @@
     </header>
 
     <!-- conteúdo principal -->
-    <main id="topo">
+    <main >
 
         <a href="https://wa.me/559999999999" target="_blank" class="logo-whatsapp">
             <img src="./imagens/logo/logo-whatsapp.png" alt="whatsapp" class="imagem-whatsapp">
         </a>
+
+
+            <section class="banner" >
+                <div id="topo">
+                <h2>Bem-vindo à Padaria Doce Sonho</h2>
+                <p>Se está a procura de pães, tortas, bolos e doces maravilhosos veio ao lugar certo! Na padaria doce sonho você encontrará delícias da melhor qualidade feitas com os melhores ingredientes.  E não se preocupe: se desejar, levamos até você! Dê uma olhada no nosso catálogo e sinta-se em casa. </p>
+                </div>
+                 <img src="./imagens/produtos/pao.jpg" alt="pao-frances"> 
+                 <img src="./imagens/ambiente/padaria.jpg" alt="">
+
+            </section>
+
         <div class="container">
 
 
-            <!-- seção sobre -->
-            <section id="sobre">
-                <div class="sobre-titulo-imagem">
-                    <h2>Sobre Nós 📜 </h2>
-                    <!-- imagem da padaria -->
-                    <img src="./imagens/ambiente/padaria.jpg" alt="foto da nossa padaria" class="imagem-padaria">
-                    <p>Fundada em 1997, somos uma padaria familiar que tem orgulho de oferecer pães sempre fresquinhos,
-                        tornando
-                        o seu dia melhor desde a primeira refeição.</p>
-                </div>
 
-                <div class="videos">
-                    <h2>Videos &#128253; </h2>
-                    <iframe src="https://www.youtube.com/embed/BVY_yumzGYI?si=sxTlUKaPnlJM9OL4"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
-
-
-                    <video controls class="video">
-                        <source src="./videos/padaria.mp4">
-                    </video>
-                </div>
-            </section>
-
+        
             <!-- seção produtos -->
             <section class="produtos">
 
 
                 <article class="pesquisar-produto">
-                    <h2> Nossos Produtos 🥐 </h2>
+                    <h2> Confira nossos Produtos 🥐 </h2>
                     <label for="produto-pesquisa">Procure aqui seu produto:</label>
                     <input name="produto-pesquisa" type="text" id="campo-filtro" placeholder="Torta, Pão, Café, etc..">
 
@@ -87,6 +76,7 @@
                     <img src="./imagens/produtos/pao.jpg" alt="Foto de pão francês" class="imagem-produtos">
                     <p>Pão quentinho feito com farinha, água, sal e fermento</p>
                     <p>R$ 0,30</p>
+                    <button>&#128722;</button>
                 </article>
 
                 <article class="card-produtos">
@@ -282,16 +272,53 @@
             </section>
 -->
             <!-- seção diferenciais -->
-            <section id="diferenciais">
-                <h2>Diferenciais 🤝 </h2>
+
+                <!-- seção sobre -->
+           
+
+
+
+        </div>
+
+         <section id="sobre">
+
+                <article class="sobre-titulo-imagem">
+                    <h2>Conheça um pouco sobre nós 📜 </h2>
+                    <!-- imagem da padaria -->
+                    <img src="./imagens/ambiente/padaria.jpg" alt="foto da nossa padaria" class="imagem-padaria">
+                    <p>Fundada em 1997, somos uma padaria familiar que tem orgulho de oferecer pães sempre fresquinhos,
+                        tornando
+                        o seu dia melhor desde a primeira refeição.</p>
+
+
+                                    <h2>Nosso diferencial 🤝 </h2>
                 <p>Procurando oferecer sempre o melhor para nossos clientes, garantimos: </p>
                 <ul>
                     <li>🥬 Ingredientes frescos diários</li>
                     <li>📜 Receitas tradicionais</li>
                     <li>🤝 Atendimento personalizado</li>
-                </ul>
+                </ul>    
+                    </article>
+
+                <article class="videos">
+                    <h2>Videos &#128253; </h2>
+                    <iframe src="https://www.youtube.com/embed/BVY_yumzGYI?si=sxTlUKaPnlJM9OL4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
+
+
+                    <video controls class="video">
+                        <source src="./videos/padaria.mp4">
+                    </video>
+                </article>
+
+                            <!-- <article id="diferenciais"> -->
+
+            <!-- </article> -->
+
             </section>
-        </div>
+
     </main>
 
     <!-- rodapé -->

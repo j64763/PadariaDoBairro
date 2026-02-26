@@ -92,6 +92,37 @@ h1:hover {
     color: var(--cor-destaque);
 }
 
+.banner {
+    background-color: #8B4513;
+        /* background-image: url("../imagens/produtos/café.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-position: top right; */
+    height: 45vh;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.banner p {
+    color: #F5F5DC;
+    
+}
+
+.banner img {
+    opacity: 0.4;
+    
+}
+.banner div {
+    align-self: center;
+}
+
+/* .banner div { */
+    /* width: 30%; */
+    /* text-align: left; */
+    /* margin: 30px; */
+/* } */
+
 h2 {
     color: var(--cor-destaque);
     margin: var(--margin-padrão);
@@ -200,10 +231,12 @@ address {
 /* }  */
 #sobre {
 
-    display: grid;
-    grid-template-columns: repeat(1, 6fr);
-    gap: 20px;
-    grid-template-rows: 90vh;
+    display: flex;
+    /* grid-template-columns: repeat(3, 6fr); */
+    gap: 10px;
+    /* grid-template-rows: 90vh; */
+    background-color: #8B4513;
+    color: #F5F5DC;
 
 }
 
@@ -239,6 +272,7 @@ footer {
     background-color: var(--cor-texto);
     color: var(--cor-fundo);
     border-radius: 45px;
+    height: 45vh;
 }
 
 footer h2 {
@@ -253,8 +287,8 @@ footer th {
 
 .imagem-padaria {
     width: 80%;
-    height: 60%;
-    margin-left: 10%;
+    /* height: 60%; */
+    /* margin-left: 10%; */
 }
 
 .galeria {
@@ -269,7 +303,8 @@ footer th {
 
 
 .link-voltar-topo {
-    color: var(--cor-texto);
+    color: var(--cor-fundo);
+   
 
 
 }
@@ -279,6 +314,13 @@ footer th {
     justify-content: space-around;
 }
 
+   .flex nav {
+        align-self: center;
+    }
+
+       .flex h1 {
+        align-self: center;
+    }
 #horarios {
     text-align: center;
 }
@@ -388,6 +430,7 @@ input[type="radio"] {
         justify-content: center;
     }
 
+ 
     .produtos {
         display: flex;
         flex-direction: column;
